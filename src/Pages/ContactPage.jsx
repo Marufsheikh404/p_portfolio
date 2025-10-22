@@ -1,5 +1,5 @@
 import Lottie from 'lottie-react';
-import animation from '../../public/animation.json'
+import animation from '../../public/Contact.json'
 import { FiArrowRight } from 'react-icons/fi';
 
 const ContactPage = () => {

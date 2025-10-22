@@ -8,7 +8,7 @@ const AboutPage = () => {
                     <div className="text-center mb-4">
                         <span className="text-gray-500 tracking-widest text-md">|| ABOUT ME ||</span>
                     </div>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white text-center mb-16">
+                    <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-white text-center mb-16">
                         Passion • Objective • Progress
                     </h1>
 

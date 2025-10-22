@@ -9,6 +9,9 @@ export default {
       fontFamily:{
         sans:["Cinzel", "serif"]
       },
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/Background.png')",
+      },
     },
   },
   plugins: [

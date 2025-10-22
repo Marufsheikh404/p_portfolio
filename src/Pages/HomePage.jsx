@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap";
 import { FiArrowRight } from "react-icons/fi";
+import image from '../assets/picture-.png'
 
 const HomePage = () => {
     const textRef = useRef();
@@ -37,7 +38,7 @@ const HomePage = () => {
         );
     }, []);
     return (
-        <section className="min-h-screen relative flex items-center justify-center bg-gray-900 text-white">
+        <section className="min-h-screen relative bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center  justify-center text-white">
             <ParticleBackground></ParticleBackground>
             {/* ===== Right Content ===== */}
             <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between   p-8 rounded-2xl shadow-xl border-none ">
@@ -81,7 +82,7 @@ const HomePage = () => {
 
                 {/* Image Section */}
                 <div className="relative flex justify-center items-center translate-x-10 mt-8 lg:mt-0">
-                    <img className="w-80" src="" alt="Photo" />
+                    <img className="w-80" src={image} alt="Photo" />
                     <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer
                     </span>

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-black text-white; /* body black background + white text */
+  margin: 0; /* optional */
+  padding: 0; /* optional */
+  min-height: 100vh; /* full height */
+}
