@@ -56,6 +56,7 @@ const HomePage = () => {
                                     strings: [
                                         "Maruf Sheikh",
                                         "A Developer",
+                                        "A Full-Stack Developer",
                                         "A Frontend Developer"
                                     ],
                                     autoStart: true,
@@ -83,9 +84,9 @@ const HomePage = () => {
                 {/* Image Section */}
                 <div className="relative flex justify-center items-center translate-x-10 mt-8 lg:mt-0">
                     <img className="w-80" src={image} alt="Photo" />
-                    <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
+                    {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer
-                    </span>
+                    </span> */}
                 </div>
             </div>
         </section>

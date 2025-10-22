@@ -49,12 +49,12 @@ const Main = () => {
     return (
         <div className="flex">
             {/* Fixed Sidebar */}
-            <div className="fixed backdrop-blur-sm flex-1 top-0 left-0 h-screen w-40 z-50">
+            <div className="fixed  flex-1 bg-gradient-to-b from-[#180f18] to-[#220c0b] top-0 left-0 h-screen w-40 z-50">
                 <Header scrollTo={scrollTo} refs={refs} active={active} />
             </div>
 
             {/* Main content */}
-            <div className="flex-1 ml-[150px] space-y-20 scroll-smooth">
+            <div className="flex-1 ml-[160px] space-y-20 scroll-smooth">
                 <section ref={homeRef}><HomePage /></section>
                 <section ref={aboutRef}><About /></section>
                 <section ref={contactRef}><Contact /></section>
