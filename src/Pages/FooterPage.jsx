@@ -11,33 +11,33 @@ const FooterPage = () => {
                     {/* Logo and Name */}
                     <div className="flex items-center gap-3">
                         <img className="w-12 h-12 rounded-lg" src={logo} alt="Logo" />
-                        <h1 className="text-2xl font-bold tracking-wide text-white">MARUF</h1>
+                        <h1 className="text-2xl font-bold tracking-wide text-gray-100">MARUF</h1>
                     </div>
 
                     {/* About Text */}
-                    <p className="text-gray-400 text-sm max-w-xs">
+                    <p className="text-slate-400 text-sm max-w-xs">
                         Hi, I'm Maruf, a web developer passionate about building elegant, responsive, and user-friendly websites. Excited to bring your ideas to life!
                     </p>
                 </div>
 
                 <div class="flex flex-col items-center">
 
-                    <h2 class="font-semibold text-lg mb-4 text-center">Quick Links</h2>
+                    <h2 class="font-semibold text-lg mb-4 text-gray-100 text-center">Quick Links</h2>
 
                     <div class="flex flex-col space-y-3 items-center">
-                        <a href="#home" class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300 
+                        <a href="#home" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
            after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
            after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
            hover:after:scale-x-100">
                             Home
                         </a>
-                        <a href="#skills" class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300 
+                        <a href="#skills" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
            after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
            after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
            hover:after:scale-x-100">
                             Skills
                         </a>
-                        <a href="#projects" class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300 
+                        <a href="#projects" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
            after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
            after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
            hover:after:scale-x-100">
@@ -48,16 +48,16 @@ const FooterPage = () => {
 
 
                 <div class="flex flex-col items-center">
-                    <h2 class="font-semibold text-lg mb-4 text-center">Contact</h2>
+                    <h2 class="font-semibold text-lg mb-4 text-gray-100 text-center">Contact</h2>
 
                     <div class="flex flex-col space-y-3 text-sm items-center">
-                        <p class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
+                        <p class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
                             <i class="fa-solid fa-envelope mr-2"></i> www.marufsheikh@gmail.com
                         </p>
-                        <p class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
+                        <p class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
                             <i class="fa-solid fa-location-dot mr-2"></i> Dhaka, Bangladesh
                         </p>
-                        <p class="relative text-gray-300 hover:text-pink-800 transition-colors duration-300  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px]  after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
+                        <p class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px]  after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-500 hover:after:scale-x-100 cursor-pointer">
                             <i class="fa-solid fa-phone mr-2"></i> +8801719199642
                         </p>
                     </div>

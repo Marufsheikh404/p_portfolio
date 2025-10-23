@@ -44,12 +44,12 @@ const HomePage = () => {
             <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between   p-8 rounded-2xl shadow-xl border-none ">
                 {/* Text Section */}
                 <div className="text-center lg:text-left flex-1">
-                    <h3 ref={textRef} className="text-2xl font-semibold text-white mb-2">
+                    <h3 ref={textRef} className="text-2xl font-semibold text-white mb-8">
                          Hello 👋 <br />
                          I’m{" "}
                     </h3>
 
-                    <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-relaxed">
+                    <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-relaxed -mt-5">
                         <span className="text-[#FF014F]">
                             <Typewriter
                                 options={{
@@ -66,7 +66,7 @@ const HomePage = () => {
                         </span>
                     </h1>
 
-                    <p className="text-gray-300 text-sm max-w-lg mx-auto lg:mx-0 mt-3 leading-relaxed">
+                    <p className="text-slate-400 max-w-lg mx-auto lg:mx-0 mt-6 leading-relaxed">
                         A passionate MERN Stack Developer crafting responsive, secure, and scalable web experiences using React, Node.js, Express, MongoDB, Firebase, and Tailwind CSS.
                     </p>
 

@@ -10,7 +10,7 @@ const ContactPage = () => {
                 {/* ---- Left Text Content ---- */}
                 <div className=''>
                     <h1 className="text-red-700 text-xl font-bold relative inline-block after:content[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-red-700 after:transition-all after:duration-500 hover:after:w-full">Get In Touch</h1>
-                    <h1 className="text-white text-5xl font-bold mt-2">Elevate Your Brand
+                    <h1 className="text-gray-100 text-5xl font-bold mt-2">Elevate Your Brand
                         with Me! </h1>
                     <Lottie className='-mt-5' animationData={animation}></Lottie>
                 </div>
