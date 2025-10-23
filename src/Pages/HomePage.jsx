@@ -39,17 +39,17 @@ const HomePage = () => {
     }, []);
     return (
         <section className="min-h-screen relative bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center  justify-center text-white">
-            <ParticleBackground></ParticleBackground>
+            <ParticleBackground/>
             {/* ===== Right Content ===== */}
             <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between   p-8 rounded-2xl shadow-xl border-none ">
                 {/* Text Section */}
                 <div className="text-center lg:text-left flex-1">
                     <h3 ref={textRef} className="text-2xl font-semibold text-white mb-2">
-                        Hello 👋
+                         Hello 👋 <br />
+                         I’m{" "}
                     </h3>
 
-                    <h1 className="font-bold text-3xl sm:text-4xl lg:text-4xl text-white leading-relaxed">
-                        I’m{" "}
+                    <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-white leading-relaxed">
                         <span className="text-[#FF014F]">
                             <Typewriter
                                 options={{
@@ -82,7 +82,7 @@ const HomePage = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="relative flex justify-center items-center translate-x-10 mt-8 lg:mt-0">
+                <div className="relative flex justify-center items-center translate-x-12 mt-8 lg:mt-0">
                     <img className="w-80" src={image} alt="Photo" />
                     {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer

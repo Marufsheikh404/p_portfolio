@@ -4,15 +4,15 @@ import { FiArrowRight } from 'react-icons/fi';
 
 const ContactPage = () => {
     return (
-        <section className="bg-[#0e0e0e] text-white py-20">
+        <section className=" text-white py-20">
             <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                 {/* ---- Left Text Content ---- */}
                 <div className=''>
                     <h1 className="text-red-700 text-xl font-bold relative inline-block after:content[''] after:absolute after:left-0 after:bottom-0 after:h-[3px] after:w-0 after:bg-red-700 after:transition-all after:duration-500 hover:after:w-full">Get In Touch</h1>
-                    <h1 className="text-white text-5xl font-bold mt-5">Elevate Your Brand
+                    <h1 className="text-white text-5xl font-bold mt-2">Elevate Your Brand
                         with Me! </h1>
-                    <Lottie animationData={animation}></Lottie>
+                    <Lottie className='-mt-5' animationData={animation}></Lottie>
                 </div>
 
                 {/* ---- Right Form ---- */}

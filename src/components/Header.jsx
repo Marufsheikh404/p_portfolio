@@ -1,27 +1,67 @@
-
+import { TbBrandLinkedin } from 'react-icons/tb';
+import profile from '../assets/profile.png'
 import { FaHouse, FaImage, FaComment } from "react-icons/fa6";
+import { FiInstagram } from 'react-icons/fi';
+import { PiFacebookLogoBold } from 'react-icons/pi';
+import { MdOutlineCastForEducation } from 'react-icons/md';
+import { GiAchievement } from 'react-icons/gi';
 
 const Header = ({ refs, scrollTo, active }) => {
     const menuItems = [
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
-        { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
-        { icon: <FaComment />, text: "Footer", ref: refs.footerRef, id: "footer" },
+        { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "skill" },
+        { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "education" },
+        { icon: <FaComment />, text: "Contact", ref: refs.ContactRef, id: "contact" },
     ];
 
     return (
         <div className="flex flex-col gap-4 w-full mt-5">
+            {/* Profile Section */}
+            <div className="flex flex-col items-center">
+                <img
+                    className="w-20 mb-3  rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
+                    src={profile}
+                    alt="Profile"
+                />
+                <h2 className="text-white text-lg font-semibold -mt-3">Maruf Sheikh</h2>
+                <p className="text-sm text-gray-400">Full-Stack Developer</p>
+            </div>
             {menuItems.map((item, idx) => (
                 <button
                     key={idx}
                     onClick={() => scrollTo(item.ref)}
-                    className={`flex group items-center gap-3 px-3 py-2 rounded-md w-full transition-all hover:bg-[#FF014F]/80 hover:translate-x-1 ${active === item.id ? "bg-[#FF014F] text-black" : "text-white"
+                    className={`flex group items-center gap-2 px-3  rounded-md w-sm transition-all hover:bg-[#FF014F]/80 hover:translate-x-1 ${active === item.id ? "bg-[#FF014F] text-black" : "text-white"
                         }`}
                 >
-                    <span className="text-lg group-hover:text-black">{item.icon}</span>
+                    <span className="text-lg text-red-600 group-hover:text-black">{item.icon}</span>
                     <p className="text-sm">{item.text}</p>
                 </button>
             ))}
+            <hr className="border-gray-600 w-full my-4" />
+            {/* Social Icons */}
+            <div className="text-center -mt-3">
+                <div className="flex items-center justify-center gap-6 mb-3 text-white text-lg group">
+                    <a
+                        href="https://www.linkedin.com/in/maruf-sheikh-699522351"
+                        className="transition-transform duration-500 group-hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
+                    >
+                        <TbBrandLinkedin />
+                    </a>
+                    <a
+                        href="#"
+                        className="transition-transform duration-500 group-hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
+                    >
+                        <FiInstagram />
+                    </a>
+                    <a
+                        href="#"
+                        className="transition-transform duration-500 group-hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
+                    >
+                        <PiFacebookLogoBold />
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };

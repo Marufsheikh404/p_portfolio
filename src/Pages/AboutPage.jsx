@@ -1,6 +1,12 @@
 import InfoCard from '../components/InfoCard/InfoCard';
 
 const AboutPage = () => {
+    const encouragementPoints = [
+        'Designing clean and simple interfaces.',
+        'Learning new technologies and patterns',
+        'Constructing impactful digital experiences',
+    ];
+
     return (
         <div>
             <div className=" min-h-screen flex items-center justify-center p-4 sm:p-8 font-sans">
@@ -14,30 +20,29 @@ const AboutPage = () => {
 
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
                         {/* Left Column: Text Content */}
-                        <div className="text-gray-300 space-y-8 text-base md:text-lg leading-relaxed">
+                        <div className="text-gray-300 space-y-2 text-base md:text-lg leading-relaxed">
                             <p>
-                                I'm Saide Bin Sabid, an enthusiastic and innovative web developer who is passionate about solving problems and creating a clean user interface. Developing technology to make life simpler, simpler to enjoy, or more meaningful is what defines me.
+                                I'm Maruf, a passionate and creative web developer who loves turning ideas into clean, interactive, and user-friendly web experiences.
+                                I focus on crafting designs and technologies that make life simpler, more enjoyable, and meaningful.
                             </p>
-                            <p>
-                                I enjoy a challenge. I like the process of coming up with simple, elegant solutions, whether it’s for a complex layout, difficult API integration, or performance optimization. That is the driving force behind me.
-                            </p>
-                            <p>
-                                Great software and web applications, in my view, are made up of empathy, acquiring the problems that users face, and providing solutions that are not only useful but also pleasant.
-                            </p>
+                            <div>
+                                <h1 className="text-2xl md:text-2xl font-bold text-[#F9004D] mb-6">Things That Encourage Me</h1>
+                                <ul className="list-disc list-inside space-y-1 text-lg text-slate-400">
+                                    {
+                                        encouragementPoints.map((text, index) => <li
+                                            key={index}
+                                        >{text}</li>)
+                                    }
+                                </ul>
+                            </div>
                         </div>
 
                         {/* Right Column: Cards */}
                         <div className="space-y-8">
-                            {/* <div className="grid sm:grid-cols-2 gap-8">
-                                <InfoCard
-                                    title="Favorite Tech"
-                                    content="React, Tailwind CSS, Node.js, Express.js, MongoDB, JWT"
-                                ></InfoCard>
-                                <InfoCard
-                                    title="Currently Exploring"
-                                    content="Next.js, TypeScript, Framer Motion, Docker, REST APIs"
-                                ></InfoCard>
-                            </div> */}
+                            <InfoCard
+                                title="Favorite Tech"
+                                content="React, Tailwind CSS, Firebase, Node.js, Express.js, MongoDB, JWT"
+                            ></InfoCard>
                             <InfoCard
                                 title="Favorite Tech"
                                 content="React, Tailwind CSS, Firebase, Node.js, Express.js, MongoDB, JWT"
