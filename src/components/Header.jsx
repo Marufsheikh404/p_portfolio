@@ -12,7 +12,7 @@ const Header = ({ refs, scrollTo, active }) => {
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
         { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "skill" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "education" },
-        { icon: <FaComment />, text: "Contact", ref: refs.ContactRef, id: "contact" },
+        { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];
 
     return (
@@ -41,6 +41,7 @@ const Header = ({ refs, scrollTo, active }) => {
             <hr className="border-gray-600 w-full my-4" />
             {/* Social Icons */}
             <div className="text-center -mt-3">
+                <p className='text-sm text-slate-400 mb-2'>Find Me online:</p>
                 <div className="flex items-center justify-center gap-6 mb-3 text-white text-lg group">
                     <a
                         href="https://www.linkedin.com/in/maruf-sheikh-699522351"
