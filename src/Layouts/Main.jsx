@@ -85,7 +85,7 @@ const Main = () => {
             </div>
 
             {/* Main content */}
-            <div className="flex-1 ml-[150px]">
+            <div className="flex-1 ml-[150px] overflow-x-hidden">
                 <section ref={homeRef}><HomePage /></section>
                 <section ref={aboutRef}><About /></section>
                 <section ref={SkillRef}><Skill /></section>
