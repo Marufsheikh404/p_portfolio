@@ -11,7 +11,7 @@ const Header = ({ refs, scrollTo, active }) => {
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
         { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "skill" },
-        { icon: <GiAchievement />, text: "Projects", ref: refs.ProjectRef, id: "project" },
+        { icon: <GiAchievement />, text: "Projects", ref: refs.ProjectRef, id: "" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "education" },
         { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];
@@ -19,7 +19,7 @@ const Header = ({ refs, scrollTo, active }) => {
     return (
         <div className="flex flex-col gap-4 w-full mt-5">
             {/* Profile Section */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col -mt-3 items-center">
                 <img
                     className="w-20 mb-3  rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
                     src={profile}
@@ -32,21 +32,21 @@ const Header = ({ refs, scrollTo, active }) => {
                 <button
                     key={idx}
                     onClick={() => scrollTo(item.ref)}
-                    className={`flex group items-center gap-2 px-3  rounded-md w-sm transition-all hover:bg-[#FF014F]/80 hover:translate-x-1 ${active === item.id ? "bg-[#FF014F] text-black" : "text-white"
+                    className={`flex group items-center gap-2 px-3 py-1 rounded-md w-sm transition-all hover:bg-[#FF014F]/80 hover:translate-x-1 ${active === item.id ? "bg-[#FF014F] text-black" : "text-white"
                         }`}
                 >
                     <span className="text-lg text-red-600 group-hover:text-black">{item.icon}</span>
                     <p className="text-sm">{item.text}</p>
                 </button>
             ))}
-            <hr className="border-gray-600 w-full my-4" />
+            <hr className="border-gray-600 -mt-2 w-full my-4" />
             {/* Social Icons */}
-            <div className="text-center -mt-3">
-                <p className='text-sm text-slate-400 mb-2'>Find Me online:</p>
+            <div className="text-center -mt-6">
+                <p className='text-sm text-slate-400'>Find Me online:</p>
                 <div className="flex items-center justify-center gap-6 mb-3 text-white text-lg group">
                     <a
                         href="https://www.linkedin.com/in/maruf-sheikh-699522351"
-                        className="transition-transform duration-500 group-hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
+                        className="transition-transform duration-500 group-hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 py-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                     >
                         <TbBrandLinkedin />
                     </a>
