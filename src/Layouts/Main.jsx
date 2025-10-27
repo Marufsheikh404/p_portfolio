@@ -32,7 +32,7 @@ const Main = () => {
         []
     );
 
-    // Custom smooth scroll function
+    // Smooth scroll function
     const smoothScrollTo = (target, duration = 1000) => {
         const startY = window.scrollY;
         const targetY = target.current.offsetTop;
@@ -65,8 +65,8 @@ const Main = () => {
     // Scroll tracking for active button
     useEffect(() => {
         const handleScroll = () => {
-            const scrollPos = window.scrollY + window.innerHeight / 2; // viewport center
-            let currentActive = active; // default to current active
+            const scrollPos = window.scrollY + window.innerHeight / 2;
+            let currentActive = active;
 
             for (const [key, ref] of Object.entries(refs)) {
                 if (ref.current) {
@@ -82,26 +82,24 @@ const Main = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-        handleScroll(); // initial check
+        handleScroll();
         return () => window.removeEventListener("scroll", handleScroll);
     }, [refs]);
 
     return (
         <div className="flex">
-            {/* Fixed Sidebar */}
-            <div className="fixed flex-1 bg-[#110F10] top-0 left-0 h-screen w-40 z-50">
-                <Header scrollTo={scrollTo} refs={refs} active={active} setActive={setActive} />
-            </div>
+            {/* Sidebar */}
+            <Header scrollTo={scrollTo} refs={refs} active={active} setActive={setActive} />
 
             {/* Main content */}
-            <div className="flex-1 ml-[150px] overflow-x-hidden">
-                <section ref={homeRef}><HomePage /></section>
-                <section ref={aboutRef}><About /></section>
-                <section ref={SkillRef}><Skill /></section>
-                <section ref={ProjectRef}><Projects /></section>
-                <section ref={EducationRef}><Education /></section>
-                <section ref={contactRef}><Contact /></section>
-                <section ref={FooterRef}><FooterPage /></section>
+            <div className="flex-1 lg:ml-[150px] w-full overflow-x-hidden">
+                <section ref={homeRef} className="min-h-screen"><HomePage /></section>
+                <section ref={aboutRef} className="min-h-screen"><About /></section>
+                <section ref={SkillRef} className="min-h-screen"><Skill /></section>
+                <section ref={ProjectRef} className="min-h-screen"><Projects /></section>
+                <section ref={EducationRef} className="min-h-screen"><Education /></section>
+                <section ref={contactRef} className="min-h-screen"><Contact /></section>
+                <section ref={FooterRef} className="min-h-screen"><FooterPage /></section>
             </div>
         </div>
     );

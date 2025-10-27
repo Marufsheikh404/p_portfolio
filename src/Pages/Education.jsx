@@ -1,4 +1,3 @@
-
 const Education = () => {
     const timeline = [
         {
@@ -27,21 +26,21 @@ const Education = () => {
 
                 <div className="relative">
                     {/* vertical line */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-700 h-full"></div>
+                    <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-700 h-full"></div>
 
                     {timeline.map((item, index) => {
                         const isLeft = index % 2 === 0; // alternately left & right
                         return (
                             <div
                                 key={index}
-                                className={`mb-16 flex w-full ${isLeft ? "justify-start" : "justify-end"
+                                className={`mb-16 flex flex-col md:flex-row w-full items-center ${isLeft ? "md:justify-start" : "md:justify-end"
                                     }`}
                             >
                                 <div
-                                    className={`w-1/2 ${isLeft ? "pr-12 text-right " : "pl-12"
+                                    className={`w-full md:w-1/2 ${isLeft ? "md:pr-12 md:text-right" : "md:pl-12 md:text-left"
                                         }`}
                                 >
-                                    <div className="bg-[#141414] p-6 shadow-lg rounded-tl-xl  rounded-br-xl rounded-bl-xl hover:shadow-red-600/30 transition">
+                                    <div className="bg-[#141414] p-6 shadow-lg rounded-tl-xl rounded-tr-xl md:rounded-tl-xl md:rounded-bl-xl hover:shadow-red-600/30 transition">
                                         <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                                         <p className="text-slate-400 mb-3">{item.institution}</p>
                                         <p className="text-slate-400 text-sm">{item.year}</p>
@@ -49,7 +48,7 @@ const Education = () => {
                                 </div>
 
                                 {/* timeline dot */}
-                                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-red-700 rounded-full border-4 border-[#121416]"></div>
+                                <div className="absolute hidden md:block md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 bg-red-700 rounded-full border-4 border-[#121416] mt-6 md:mt-0"></div>
                             </div>
                         );
                     })}
