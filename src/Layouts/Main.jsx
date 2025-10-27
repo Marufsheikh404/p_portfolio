@@ -6,6 +6,7 @@ import Contact from "../Pages/ContactPage";
 import Skill from "../Pages/Skill";
 import Education from "../Pages/Education";
 import FooterPage from "../Pages/FooterPage";
+import Projects from "../Pages/Projects";
 
 const Main = () => {
     // Section refs
@@ -13,6 +14,7 @@ const Main = () => {
     const aboutRef = useRef();
     const EducationRef = useRef();
     const SkillRef = useRef();
+    const ProjectRef = useRef();
     const contactRef = useRef();
     const FooterRef = useRef();
 
@@ -22,6 +24,7 @@ const Main = () => {
             homeRef,
             aboutRef,
             SkillRef,
+            ProjectRef,
             EducationRef,
             contactRef,
             FooterRef
@@ -89,6 +92,7 @@ const Main = () => {
                 <section ref={homeRef}><HomePage /></section>
                 <section ref={aboutRef}><About /></section>
                 <section ref={SkillRef}><Skill /></section>
+                <section ref={ProjectRef}><Projects /></section>
                 <section ref={EducationRef}><Education /></section>
                 <section ref={contactRef}><Contact /></section>
                 <section ref={FooterRef}><FooterPage /></section>

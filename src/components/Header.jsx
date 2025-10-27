@@ -11,6 +11,7 @@ const Header = ({ refs, scrollTo, active }) => {
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
         { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "skill" },
+        { icon: <GiAchievement />, text: "Projects", ref: refs.ProjectRef, id: "project" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "education" },
         { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];

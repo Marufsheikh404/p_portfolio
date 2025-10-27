@@ -41,7 +41,7 @@ const HomePage = () => {
         <section className="min-h-screen relative bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center  justify-center text-white">
             <ParticleBackground/>
             {/* ===== Right Content ===== */}
-            <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between   p-8 rounded-2xl shadow-xl border-none ">
+            <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between  p-8 rounded-2xl shadow-xl border-none ">
                 {/* Text Section */}
                 <div className="text-center lg:text-left flex-1">
                     <h3 ref={textRef} className="text-2xl font-semibold text-white mb-8">
@@ -82,8 +82,8 @@ const HomePage = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="relative flex justify-center items-center translate-x-12 mt-8 lg:mt-0">
-                    <img className="w-80" src={image} alt="Photo" />
+                <div className="relative flex justify-center items-center translate-x-8 mt-8 lg:mt-0">
+                    <img className="w-96" src={image} alt="Photo" />
                     {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer
                     </span> */}
