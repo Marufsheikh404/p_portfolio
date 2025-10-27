@@ -2,9 +2,9 @@
 const Education = () => {
     const timeline = [
         {
-            title: "Bachelor of Computer Science & Engineering",
-            institution: "United International University, Dhaka - 1212",
-            year: "2020 - 2024",
+            title: "Computer Science & Technology (CST)",
+            institution: "Shariatpur Polytechnic Institute, Shariatpur",
+            year: "2021 - 2022",
         },
         {
             title: "Secondary School Certificate (SSC)",
@@ -14,7 +14,7 @@ const Education = () => {
     ];
 
     return (
-        <section className="bg-[#121416] text-white py-20">
+        <section className="text-white py-20">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
@@ -38,10 +38,10 @@ const Education = () => {
                                     }`}
                             >
                                 <div
-                                    className={`w-1/2 ${isLeft ? "pr-12 text-right" : "pl-12 "
+                                    className={`w-1/2 ${isLeft ? "pr-12 text-right " : "pl-12"
                                         }`}
                                 >
-                                    <div className="bg-[#1b1d1f] rounded-2xl p-6 shadow-lg hover:shadow-red-600/30 transition">
+                                    <div className="bg-[#141414] p-6 shadow-lg rounded-tl-xl  rounded-br-xl rounded-bl-xl hover:shadow-red-600/30 transition">
                                         <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                                         <p className="text-slate-400 mb-3">{item.institution}</p>
                                         <p className="text-slate-400 text-sm">{item.year}</p>
