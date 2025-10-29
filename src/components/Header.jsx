@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { TbBrandLinkedin } from 'react-icons/tb';
 import profile from '../assets/profile.png';
-import { FaHouse, FaImage, FaComment, FaBaby } from "react-icons/fa6";
+import { FaHouse, FaImage, FaComment} from "react-icons/fa6";
 import { FiInstagram } from 'react-icons/fi';
 import { PiFacebookLogoBold } from 'react-icons/pi';
 import { MdOutlineCastForEducation } from 'react-icons/md';
-import { GiAchievement } from 'react-icons/gi';
-import { FaUserTimes } from "react-icons/fa";
+import { GiAchievement} from 'react-icons/gi';
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 
 const Header = ({ refs, scrollTo, active, setActive }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                     onClick={() => setIsOpen(!isOpen)}
                     className="text-white text-3xl p-2 rounded-md bg-[#110F10]/80 hover:bg-[#FF014F]/80 transition"
                 >
-                    {isOpen ? <FaUserTimes /> : <FaBaby />}
+                    {isOpen ? <RxCross2/> : <RxHamburgerMenu/>}
                 </button>
             </div>
 

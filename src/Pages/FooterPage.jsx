@@ -7,11 +7,11 @@ const FooterPage = () => {
         <footer class="bg-[#141414] text-white py-12">
             <div class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                <div className="space-y-4">
+                <div className="space-y-4 place-items-center ">
                     {/* Logo and Name */}
-                    <div className="flex items-center gap-3">
-                        <img className="w-12 h-12 rounded-lg" src={logo} alt="Logo" />
-                        <h1 className="text-2xl font-bold tracking-wide text-gray-100">MARUF</h1>
+                    <div className="flex gap-3 lg:gap-12">
+                        <img className="w-11 h-11 rounded-tl-2xl rounded-br-2xl" src={logo} alt="Logo" />
+                        <h1 className="text-lg font-bold  tracking-wide text-gray-100">MARUF</h1>
                     </div>
 
                     {/* About Text */}

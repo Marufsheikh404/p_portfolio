@@ -44,7 +44,7 @@ const HomePage = () => {
             <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between  p-8 rounded-2xl shadow-xl border-none ">
                 {/* Text Section */}
                 <div className="text-center lg:text-left flex-1">
-                    <h3 ref={textRef} className="text-2xl font-semibold text-white mb-8">
+                    <h3 ref={textRef} className="text-xl font-semibold text-white mb-8">
                          Hello 👋 <br />
                          I’m{" "}
                     </h3>

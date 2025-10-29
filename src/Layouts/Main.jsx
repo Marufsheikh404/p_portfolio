@@ -99,7 +99,7 @@ const Main = () => {
                 <section ref={ProjectRef} className="min-h-screen"><Projects /></section>
                 <section ref={EducationRef} className="min-h-screen"><Education /></section>
                 <section ref={contactRef} className="min-h-screen"><Contact /></section>
-                <section ref={FooterRef} className="min-h-screen"><FooterPage /></section>
+                <section ref={FooterRef}><FooterPage /></section>
             </div>
         </div>
     );

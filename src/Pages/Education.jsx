@@ -1,3 +1,7 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Education = () => {
     const timeline = [
         {
@@ -36,7 +40,7 @@ const Education = () => {
                                 className={`mb-16 flex flex-col md:flex-row w-full items-center ${isLeft ? "md:justify-start" : "md:justify-end"
                                     }`}
                             >
-                                <div
+                                <div data-aos="zoom-in-right"
                                     className={`w-full md:w-1/2 ${isLeft ? "md:pr-12 md:text-right" : "md:pl-12 md:text-left"
                                         }`}
                                 >

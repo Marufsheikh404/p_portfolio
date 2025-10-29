@@ -53,9 +53,11 @@ const Skill = () => {
                     <h2 className="text-4xl font-extrabold mt-2">My Tech Stack</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="flex flex-col flex-wrap justify-center items-center gap-8 md:flex-row" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     {categories.map((category, i) => (
-                        <div key={i} className="bg-[#141414] rounded-2xl p-5 shadow-md hover:shadow-red-700/30 transition-transform duration-500 ease-in-out hover:scale-105">
+                        <div key={i} className="bg-[#141414] w-80 h-80 rounded-2xl p-5 shadow-md hover:shadow-red-700/30 transition-transform duration-500 ease-in-out hover:scale-105">
                             <h3 className="text-lg font-semibold mb-6 text-center">
                                 {category.title}
                             </h3>
