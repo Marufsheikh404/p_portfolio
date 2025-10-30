@@ -7,12 +7,12 @@ const Education = () => {
         {
             title: "Computer Science & Technology (CST)",
             institution: "Shariatpur Polytechnic Institute, Shariatpur",
-            year: "2021 - 2022",
+            year: "2021 - 2025",
         },
         {
             title: "Secondary School Certificate (SSC)",
             institution: "RajaPur Yasin Inistitution, Rajbari",
-            year: "2020 - 2021",
+            year: "2019 - 2021",
         },
     ];
 
