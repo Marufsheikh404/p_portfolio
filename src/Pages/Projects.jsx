@@ -18,14 +18,14 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id="project" className="py-20 bg-[#010b16] text-white">
+        <div id="project" className="py-20  text-white">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
-                        || Education ||
+                        || Projects ||
                     </p>
                     <h2 className="text-4xl font-extrabold mt-2">
-                        My Academic Journey
+                        My Projects
                     </h2>
                 </div>
 
@@ -53,7 +53,7 @@ const Projects = () => {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative rounded-2xl  overflow-hidden w-[320px] h-[420px] mx-auto group hover:shadow-[0_0_30px_rgba(255,0,0,0.35)] transition-all duration-500">
+                            <div className="relative rounded-2xl  overflow-hidden w-[320px] h-[420px] mx-auto group">
                                 <img
                                     src={project.img}
                                     alt=""
@@ -84,13 +84,13 @@ const Projects = () => {
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-1 hover:text-red-400 hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300"
+                                            className="flex items-center gap-1 hover:text-red-700 hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300"
                                         >
                                             <SquareArrowOutUpRight size={14} />
                                             <span>View Project</span>
                                         </a>
 
-                                        <button
+                                        {/* <button
                                             onClick={() => {
                                                 setSelectDes(project);
                                                 document.getElementById("my_modal_5").showModal();
@@ -98,12 +98,12 @@ const Projects = () => {
                                             className="hover:text-red-400 hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300 cursor-pointer"
                                         >
                                             Details
-                                        </button>
+                                        </button> */}
                                     </div>
                                 </div>
 
                                 {/* Red Neon bottom edge */}
-                                <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-pink-500 to-red-500 blur-sm"></div>
+                                {/* <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-pink-500 to-red-500 blur-sm"></div> */}
                             </div>
                         </SwiperSlide>
                     ))}
