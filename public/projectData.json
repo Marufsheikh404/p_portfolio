@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "title": "RedParts",
+        "img": "https://i.ibb.co.com/ksj4YGf4/Screenshot-2025-10-28-033532.png",
+        "tech": [
+            "React",
+            "Tailwind CSS",
+            "Framer Motion"
+        ],
+        "description": "RedParts is a modern and fully responsive portfolio website designed to showcase personal skills, projects, and educational background with smooth animations and clean UI components.",
+        "challengingPart": "The most challenging part was implementing smooth scroll animations and transitions using Framer Motion while maintaining performance and responsiveness across all devices.",
+        "live": "#"
+    },
+    {
+        "id": 2,
+        "title": "EcoBazar",
+        "img": "https://i.ibb.co.com/bM4F1ZDB/Screenshot-2025-10-28-033027.png",
+        "tech": [
+            "HTML",
+            "Tailwind CSS"
+        ],
+        "description": "EcoBazar is a clean and minimal e-commerce landing page showcasing featured products, deals, and categories with an eye-catching layout built using Tailwind CSS.",
+        "challengingPart": "The main challenge was creating a flexible and fully responsive grid layout that looks balanced across different screen sizes.",
+        "live": "#"
+    },
+    {
+        "id": 3,
+        "title": "Donation",
+        "img": "https://i.ibb.co.com/mCWr4tGx/Screenshot-2025-10-28-062650.png",
+        "tech": [
+            "HTML",
+            "Tailwind CSS",
+            "JS"
+        ],
+        "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
+        "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
+        "live": "#"
+    }
+]
