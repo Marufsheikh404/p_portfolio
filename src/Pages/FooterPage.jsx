@@ -9,7 +9,7 @@ const FooterPage = () => {
                 <div className="space-y-4 place-items-center ">
                     {/* Logo and Name */}
                     <div className="flex gap-3 lg:gap-12">
-                        <img className="w-11 h-11 rounded-tl-2xl rounded-br-2xl" src="/assets/footer-logo.jpeg" alt="Logo" />
+                        <img className="w-11 h-11 rounded-tl-2xl rounded-br-2xl" src="/assets/maruf.jpeg" alt="Logo" />
                         <h1 className="text-lg font-bold  tracking-wide text-gray-100">MARUF</h1>
                     </div>
 
@@ -25,21 +25,21 @@ const FooterPage = () => {
 
                     <div class="flex flex-col space-y-3 items-center">
                         <a href="#home" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
-           after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
-           after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
-           hover:after:scale-x-100">
+                        after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
+                      after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
+                        hover:after:scale-x-100">
                             Home
                         </a>
                         <a href="#skills" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
-           after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
-           after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
-           hover:after:scale-x-100">
+                        after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
+                      after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
+                        hover:after:scale-x-100">
                             Skills
                         </a>
                         <a href="#projects" class="relative text-slate-400 hover:text-pink-800 transition-colors duration-300 
-           after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
-           after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
-           hover:after:scale-x-100">
+                        after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
+                      after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
+                        hover:after:scale-x-100">
                             Projects
                         </a>
                     </div>
