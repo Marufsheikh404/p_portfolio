@@ -1,5 +1,4 @@
 import { FaFacebook, FaGithub, FaInstagram } from 'react-icons/fa6';
-import logo from '../assets/footer-logo.jpeg';
 import { CiLinkedin } from 'react-icons/ci';
 
 const FooterPage = () => {
@@ -10,7 +9,7 @@ const FooterPage = () => {
                 <div className="space-y-4 place-items-center ">
                     {/* Logo and Name */}
                     <div className="flex gap-3 lg:gap-12">
-                        <img className="w-11 h-11 rounded-tl-2xl rounded-br-2xl" src={logo} alt="Logo" />
+                        <img className="w-11 h-11 rounded-tl-2xl rounded-br-2xl" src="/assets/footer-logo.jpeg" alt="Logo" />
                         <h1 className="text-lg font-bold  tracking-wide text-gray-100">MARUF</h1>
                     </div>
 

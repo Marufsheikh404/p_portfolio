@@ -18,7 +18,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id="project" className="py-20  text-white">
+        <div className="py-20  text-white">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
@@ -53,18 +53,18 @@ const Projects = () => {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative rounded-2xl  overflow-hidden w-[320px] h-[420px] mx-auto group">
+                            <div className="relative rounded-2xl overflow-hidden w-[320px] h-[420px] mx-auto group bg-[#270f0f] p-2">
                                 <img
                                     src={project.img}
-                                    alt=""
-                                    className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                                    alt="Project Photo"
+                                    className="w-full rounded-tr-3xl rounded-bl-3xl h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                                 />
 
                                 {/* Red top glow line */}
                                 {/* <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-500 via-pink-500 to-red-500 animate-pulse"></div> */}
 
                                 <div className="p-5 space-y-3">
-                                    <h2 className="text-xl font-semibold">
+                                    <h2 className="text-xl font-semibold text-slate-400">
                                         {project.title}
                                     </h2>
 
@@ -72,7 +72,7 @@ const Projects = () => {
                                         {project.tech.map((t, i) => (
                                             <span
                                                 key={i}
-                                                className="text-xs px-3 py-1 rounded-full  backdrop-blur-sm"
+                                                className="text-xs px-2 rounded-full  backdrop-blur-md"
                                             >
                                                 {t}
                                             </span>
@@ -84,7 +84,10 @@ const Projects = () => {
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-1 hover:text-red-700 hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300"
+                                            className="flex items-center gap-1 hover:text-pink-800 transition-colors duration-300 
+                                            after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
+                                          after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
+                                            hover:after:scale-x-100"
                                         >
                                             <SquareArrowOutUpRight size={14} />
                                             <span>View Project</span>

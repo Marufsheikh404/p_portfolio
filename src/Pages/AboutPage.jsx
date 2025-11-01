@@ -20,7 +20,7 @@ const AboutPage = () => {
 
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
                         {/* Left Column: Text Content */}
-                        <div className="text-gray-100 space-y-2 text-base md:text-lg leading-relaxed">
+                        <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-easing="ease-in-out" className="text-gray-100 space-y-2 text-base md:text-lg leading-relaxed">
                             <p className='text-slate-400'>
                                 I'm Maruf, a passionate and creative web developer who loves turning ideas into clean, interactive, and user-friendly web experiences.
                                 I focus on crafting designs and technologies that make life simpler, more enjoyable, and meaningful.
@@ -46,7 +46,7 @@ const AboutPage = () => {
                         </div>
 
                         {/* Right Column: Cards */}
-                        <div className="space-y-8">
+                        <div className="space-y-8" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
                             <InfoCard
                                 title="Favorite Tech"
                                 content="React, Tailwind CSS, Firebase, Node.js, Express.js, MongoDB, JWT"

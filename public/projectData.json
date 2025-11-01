@@ -1,12 +1,16 @@
 [
     {
         "id": 1,
-        "title": "RedParts",
-        "img": "https://i.ibb.co.com/ksj4YGf4/Screenshot-2025-10-28-033532.png",
+        "title": "French-Resturant",
+        "img": "https://i.ibb.co.com/fz0XjgrG/Big-Tas-Tea-Menu-Malaysia-Latest-Prices-2024.jpg",
         "tech": [
             "React",
             "Tailwind CSS",
-            "Framer Motion"
+            "Firebase",
+            "Mongodb",
+            "Express.js",
+            "Node.js",
+            "JWT"
         ],
         "description": "RedParts is a modern and fully responsive portfolio website designed to showcase personal skills, projects, and educational background with smooth animations and clean UI components.",
         "challengingPart": "The most challenging part was implementing smooth scroll animations and transitions using Framer Motion while maintaining performance and responsiveness across all devices.",
