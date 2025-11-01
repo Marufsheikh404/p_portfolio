@@ -6,6 +6,7 @@ import { PiFacebookLogoBold } from 'react-icons/pi';
 import { MdOutlineCastForEducation } from 'react-icons/md';
 import { GiAchievement} from 'react-icons/gi';
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { BsFillProjectorFill } from "react-icons/bs";
 
 const Header = ({ refs, scrollTo, active, setActive }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
         { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "Skill" },
-        { icon: <GiAchievement />, text: "Projects", ref: refs.ProjectRef, id: "Project" },
+        { icon: <BsFillProjectorFill/>, text: "Projects", ref: refs.ProjectRef, id: "Project" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "Education" },
         { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];
