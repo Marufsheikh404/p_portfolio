@@ -44,7 +44,7 @@ const Skill = () => {
     ];
 
     return (
-        <section className=" text-white py-20">
+        <section className=" text-white py-10">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
@@ -57,7 +57,7 @@ const Skill = () => {
                     data-aos-easing="linear"
                     data-aos-duration="1500">
                     {categories.map((category, i) => (
-                        <div key={i} className="bg-[#141414] w-80 h-80 rounded-2xl p-5 shadow-md hover:shadow-red-700/30 transition-transform duration-500 ease-in-out hover:scale-105">
+                        <div key={i} className="bg-[#141414] w-full h-90 md:w-80 rounded-2xl p-5 shadow-md hover:shadow-red-700/30 transition-transform duration-500 ease-in-out hover:scale-105">
                             <h3 className="text-lg font-semibold mb-6 text-center">
                                 {category.title}
                             </h3>

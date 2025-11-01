@@ -96,9 +96,9 @@ const Main = () => {
                 <section ref={homeRef} className="min-h-screen"><HomePage /></section>
                 <section ref={aboutRef} className="min-h-screen"><About /></section>
                 <section ref={SkillRef} className="min-h-screen"><Skill /></section>
-                <section ref={ProjectRef} className="min-h-screen"><Projects /></section>
-                <section ref={EducationRef} className="min-h-screen"><Education /></section>
-                <section ref={contactRef} className="min-h-screen"><Contact /></section>
+                <section ref={ProjectRef}><Projects /></section>
+                <section ref={EducationRef}><Education /></section>
+                <section ref={contactRef}><Contact /></section>
                 <section ref={FooterRef}><FooterPage /></section>
             </div>
         </div>

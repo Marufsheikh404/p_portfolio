@@ -18,7 +18,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div className="py-20  text-white">
+        <div className="py-10  text-white">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
