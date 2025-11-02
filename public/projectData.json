@@ -14,7 +14,7 @@
         ],
         "description": "RedParts is a modern and fully responsive portfolio website designed to showcase personal skills, projects, and educational background with smooth animations and clean UI components.",
         "challengingPart": "The most challenging part was implementing smooth scroll animations and transitions using Framer Motion while maintaining performance and responsiveness across all devices.",
-        "live": "#"
+        "live": "https://food-panda-8656dc.netlify.app/"
     },
     {
         "id": 2,
