@@ -84,7 +84,7 @@ const Projects = () => {
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-1 hover:text-pink-800 transition-colors duration-300 
+                                            className="relative flex items-center gap-1 hover:text-pink-800 transition-colors duration-300 
                                             after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
                                           after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
                                             hover:after:scale-x-100"
