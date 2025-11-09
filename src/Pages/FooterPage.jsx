@@ -61,16 +61,22 @@ const FooterPage = () => {
                         </p>
                     </div>
                     <div className='flex items-center gap-5 mt-5'>
-                        <FaFacebook
+                        <a href="https://www.facebook.com/share/1EuzibpXMH/" target='_blank' rel='noopener noreferrer'>  <FaFacebook
                             className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
                hover:bg-red-600 flex items-center justify-center"
-                        />
-                        <CiLinkedin className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
+                        /></a>
+                        <a href="https://www.linkedin.com/in/maruf-sheikh-699522351" target='_blank' rel='noopener noreferrer'>
+                            <CiLinkedin className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
                hover:bg-red-600 flex items-center justify-center" />
-                        <FaGithub className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
+                        </a>
+                        <a href="https://github.com/Marufsheikh404" target='_blank' rel='noopener noreferrer'>
+                            <FaGithub className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
                hover:bg-red-600 flex items-center justify-center" />
-                        <FaInstagram className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
+                        </a>
+                        <a href="https://www.instagram.com/maruf_404_x?igsh=MTFnamNpa3pmZXMzNw==" target='_blank' rel='noopener noreferrer'>
+                            <FaInstagram className="text-white w-8 h-8 p-2 rounded-full transition-all duration-300 cursor-pointer 
                hover:bg-red-600 flex items-center justify-center" />
+                        </a>
                     </div>
                 </div>
 

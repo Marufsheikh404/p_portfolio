@@ -80,19 +80,19 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                         <p className='text-sm text-slate-400'>Find Me online:</p>
                         <div className="flex items-center justify-center gap-6 mb-3 text-white text-lg group">
                             <a
-                                href="https://www.linkedin.com/in/maruf-sheikh-699522351"
+                                href="https://www.linkedin.com/in/maruf-sheikh-699522351" target='_blank' rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 py-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <TbBrandLinkedin />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/maruf_404_x?igsh=MTFnamNpa3pmZXMzNw==" target='_blank' rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <FiInstagram />
                             </a>
                             <a
-                                href="#"
+                                href="https://www.facebook.com/share/1EuzibpXMH/" target='_blank' rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <PiFacebookLogoBold />
