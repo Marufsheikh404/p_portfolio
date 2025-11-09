@@ -19,14 +19,19 @@
     {
         "id": 2,
         "title": "EcoBazar",
-        "img": "https://i.ibb.co.com/bM4F1ZDB/Screenshot-2025-10-28-033027.png",
+        "img": "https://i.ibb.co.com/GftC4kQ1/Big-isolated-Motorcycle-vector-colorful-icons.jpg",
         "tech": [
-            "HTML",
-            "Tailwind CSS"
+            "Tailwind CSS",
+            "React",
+            "Firebase",
+            "mongoDB",
+            "Express.js",
+            "Node.js",
+            "JWT"
         ],
         "description": "EcoBazar is a clean and minimal e-commerce landing page showcasing featured products, deals, and categories with an eye-catching layout built using Tailwind CSS.",
         "challengingPart": "The main challenge was creating a flexible and fully responsive grid layout that looks balanced across different screen sizes.",
-        "live": "#"
+        "live": "https://nerw-project-83116.firebaseapp.com/"
     },
     {
         "id": 3,
