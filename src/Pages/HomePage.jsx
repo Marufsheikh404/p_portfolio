@@ -42,7 +42,7 @@ const HomePage = () => {
             {/* ===== Right Content ===== */}
             <div className="flex flex-1 z-10 relative flex-col lg:flex-row items-center justify-between  p-8 rounded-2xl shadow-xl border-none ">
                 {/* Text Section */}
-                <div className="text-center lg:text-left flex-1">
+                <div className="text-center lg:text-left flex-1 ml-10">
                     <h3 ref={textRef} className="text-xl font-semibold text-white mb-8">
                          Hello 👋 <br />
                          I’m{" "}
@@ -55,7 +55,7 @@ const HomePage = () => {
                                     strings: [
                                         "Maruf Sheikh",
                                         "A Developer",
-                                        "A Full-Stack Developer",
+                                        "A Mern Stack Developer",
                                         "A Frontend Developer"
                                     ],
                                     autoStart: true,
@@ -81,8 +81,8 @@ const HomePage = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="relative flex justify-center items-center translate-x-8 mt-8 lg:mt-0">
-                    <img className="w-96" src="/assets/picture-.png" alt="Photo" />
+                <div className="relative flex justify-center items-center translate-x-5 mt-8 lg:mt-0">
+                    <img className="w-96" src="/public/assets/picture.png" alt="Photo" />
                     {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer
                     </span> */}
