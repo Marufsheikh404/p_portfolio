@@ -82,7 +82,7 @@ const HomePage = () => {
 
                 {/* Image Section */}
                 <div className="relative flex justify-center items-center translate-x-5 mt-8 lg:mt-0">
-                    <img className="w-96" src="/public/assets/picture.png" alt="Photo" />
+                    <img className="w-96" src="/assets/picture.png" alt="Photo" />
                     {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
                         Web Developer
                     </span> */}
