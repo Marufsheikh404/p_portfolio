@@ -53,7 +53,7 @@ const Projects = () => {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative rounded-2xl overflow-hidden w-[320px] h-[420px] mx-auto group bg-[#270f0f] p-2">
+                            <div className="relative rounded-2xl overflow-hidden w-[320px] h-[420px] mx-auto group bg-[#141414] p-2">
                                 <img
                                     src={project.img}
                                     alt="Project Photo"

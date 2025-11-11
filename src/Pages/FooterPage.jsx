@@ -3,7 +3,7 @@ import { CiLinkedin } from 'react-icons/ci';
 
 const FooterPage = () => {
     return (
-        <footer class="bg-[#141414] text-white py-12">
+        <footer data-aos="flip-up" class="bg-[#141414] text-white py-12">
             <div class="w-11/12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
                 <div className="space-y-4 place-items-center ">
