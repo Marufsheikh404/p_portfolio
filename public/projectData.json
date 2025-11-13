@@ -40,7 +40,11 @@
         "tech": [
             "HTML",
             "Tailwind CSS",
-            "JS"
+            "Javascript",
+            "React",
+            "daisySUI",
+            "Firebase",
+            "Other Packges"
         ],
         "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
         "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
