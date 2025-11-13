@@ -82,8 +82,8 @@ const HomePage = () => {
 
                 {/* Image Section */}
                 <div className="relative flex justify-center items-center mt-8 lg:mt-0">
-                    <img className="w-96" src="/assets/picture.png" alt="Photo" />
-                    {/* <span className="absolute text-3xl sm:text-5xl font-bold text-gray-800 opacity-20 select-none">
+                    <img className="w-[500px] z-10 -translate-y-8" src="/assets/Profile.png" alt="Photo" />
+                    {/* <span className="absolute text-3xl sm:text-5xl font-bold text-[#ffffff] -translate-y-[50px] opacity-25 select-none">
                         Web Developer
                     </span> */}
                 </div>

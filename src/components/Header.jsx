@@ -40,7 +40,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                     <div className="flex flex-col -mt-3 items-center">
                         <img
                             className="w-20 mb-3 rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
-                            src="/assets/profile.png"
+                            src="/assets/picture.png"
                             alt="Profile"
                         />
                         <h2 className="text-white text-lg font-semibold -mt-3">Maruf Sheikh</h2>
