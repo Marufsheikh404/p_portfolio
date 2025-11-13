@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap";
 import { FiArrowRight } from "react-icons/fi";
+import img from '../../public/assets/Profile.png'
 
 const HomePage = () => {
     const textRef = useRef();
@@ -82,7 +83,7 @@ const HomePage = () => {
 
                 {/* Image Section */}
                 <div className="relative flex justify-center items-center mt-8 lg:mt-0">
-                    <img className="w-[500px] z-10 -translate-y-8" src="/assets/Profile.png" alt="Photo" />
+                    <img className="w-[500px] z-10 -translate-y-8" src={img} alt="Photo" />
                     {/* <span className="absolute text-3xl sm:text-5xl font-bold text-[#ffffff] -translate-y-[50px] opacity-25 select-none">
                         Web Developer
                     </span> */}
