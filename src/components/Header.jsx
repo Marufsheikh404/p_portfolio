@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { TbBrandLinkedin } from 'react-icons/tb';
-import { FaHouse, FaImage, FaComment} from "react-icons/fa6";
+import { FaHouse, FaImage, FaComment } from "react-icons/fa6";
 import { FiInstagram } from 'react-icons/fi';
 import { PiFacebookLogoBold } from 'react-icons/pi';
 import { MdOutlineCastForEducation } from 'react-icons/md';
-import { GiAchievement} from 'react-icons/gi';
+import { GiAchievement } from 'react-icons/gi';
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { BsFillProjectorFill } from "react-icons/bs";
 
@@ -15,20 +15,20 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
         { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "Skill" },
-        { icon: <BsFillProjectorFill/>, text: "Projects", ref: refs.ProjectRef, id: "Project" },
+        { icon: <BsFillProjectorFill />, text: "Projects", ref: refs.ProjectRef, id: "Project" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "Education" },
         { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];
 
     return (
-        <>
+        <div>
             {/* Hamburger for Mobile */}
             <div className="lg:hidden fixed top-4 left-4 z-50">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="text-white text-3xl p-2 rounded-md bg-[#110F10]/80 hover:bg-[#FF014F]/80 transition"
                 >
-                    {isOpen ? <RxCross2/> : <RxHamburgerMenu/>}
+                    {isOpen ? <RxCross2 /> : <RxHamburgerMenu />}
                 </button>
             </div>
 
@@ -44,7 +44,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                             alt="Profile"
                         />
                         <h2 className="text-white text-lg font-semibold -mt-3">Maruf Sheikh</h2>
-                        <p className="text-sm text-gray-400">Full-Stack Developer</p>
+                        <p className="text-sm text-gray-400">Mern-Stack Developer</p>
                     </div>
 
                     {/* Menu */}
@@ -101,7 +101,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
