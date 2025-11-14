@@ -10,7 +10,7 @@ export default {
         sans:["Cinzel", "serif"]
       },
       backgroundImage: {
-        'hero-pattern': "url('/public/assets/Background.png')",
+        'hero-pattern': "url('/src/assets/Background.png')",
       },
     },
   },

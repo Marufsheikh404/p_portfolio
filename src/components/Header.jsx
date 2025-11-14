@@ -7,6 +7,7 @@ import { MdOutlineCastForEducation } from 'react-icons/md';
 import { GiAchievement } from 'react-icons/gi';
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 import { BsFillProjectorFill } from "react-icons/bs";
+import image from '../assets/passport.jpg'
 
 const Header = ({ refs, scrollTo, active, setActive }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +40,8 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                     {/* Profile */}
                     <div className="flex flex-col -mt-3 items-center">
                         <img
-                            className="w-20 mb-3 rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
-                            src="/assets/picture.png"
+                            className="w-20 h-20 mb-3 rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
+                            src={image}
                             alt="Profile"
                         />
                         <h2 className="text-white text-lg font-semibold -mt-3">Maruf Sheikh</h2>
