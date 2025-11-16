@@ -23,7 +23,8 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
 
     return (
         <div>
-            {/* Hamburger for Mobile */}
+
+            {/* MOBILE HAMBURGER BUTTON */}
             <div className="lg:hidden fixed top-4 left-4 z-50">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
@@ -33,10 +34,17 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                 </button>
             </div>
 
-            {/* Sidebar */}
-            <div className={`fixed top-0 left-0 h-screen bg-[#110F10] z-40 w-40 transform transition-transform duration-300
-                ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}>
+            {/* SIDEBAR */}
+            <div
+                className={`
+                    fixed top-0 left-0 h-screen bg-[#110F10] z-40 w-44 
+                    transition-transform duration-300
+                    ${isOpen ? "translate-x-0" : "-translate-x-full"} 
+                    lg:translate-x-0
+                `}
+            >
                 <div className="flex flex-col gap-4 w-full mt-5 px-2">
+
                     {/* Profile */}
                     <div className="flex flex-col -mt-3 items-center">
                         <img
@@ -48,7 +56,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                         <p className="text-sm text-gray-400">Mern-Stack Developer</p>
                     </div>
 
-                    {/* Menu */}
+                    {/* Menu Items */}
                     <div className="flex flex-col gap-1 mt-3">
                         {menuItems.map((item, idx) => (
                             <button
@@ -56,19 +64,18 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                                 onClick={() => {
                                     scrollTo(item.ref);
                                     setActive(item.id);
-                                    setIsOpen(false);
+                                    setIsOpen(false); // auto close on mobile
                                 }}
                                 className="flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-300 w-full text-left group hover:bg-[#FF014F]/80 hover:translate-x-1"
                             >
-                                {/* Icon: black on hover or active */}
                                 <span
-                                    className={`text-lg transition-colors duration-300 ${active === item.id ? "text-black" : "text-red-600"
-                                        } group-hover:text-black`}
+                                    className={`text-lg transition-colors duration-300 ${
+                                        active === item.id ? "text-black" : "text-red-600"
+                                    } group-hover:text-black`}
                                 >
                                     {item.icon}
                                 </span>
 
-                                {/* Text always white */}
                                 <p className="text-sm text-white">{item.text}</p>
                             </button>
                         ))}
@@ -81,27 +88,37 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                         <p className='text-sm text-slate-400'>Find Me online:</p>
                         <div className="flex items-center justify-center gap-6 mb-3 text-white text-lg group">
                             <a
-                                href="https://www.linkedin.com/in/maruf-sheikh-699522351" target='_blank' rel='noopener noreferrer'
+                                href="https://www.linkedin.com/in/maruf-sheikh-699522351"
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 py-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <TbBrandLinkedin />
                             </a>
+
                             <a
-                                href="https://www.instagram.com/maruf_404_x?igsh=MTFnamNpa3pmZXMzNw==" target='_blank' rel='noopener noreferrer'
+                                href="https://www.instagram.com/maruf_404_x"
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <FiInstagram />
                             </a>
+
                             <a
-                                href="https://www.facebook.com/share/1EuzibpXMH/" target='_blank' rel='noopener noreferrer'
+                                href="https://www.facebook.com"
+                                target='_blank'
+                                rel='noopener noreferrer'
                                 className="transition-transform duration-500 hover:text-black hover:scale-125 hover:rotate-180 text-white w-8 h-8 p-2 rounded-full cursor-pointer hover:bg-red-600 flex items-center justify-center"
                             >
                                 <PiFacebookLogoBold />
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     );
 };

@@ -65,7 +65,7 @@ const Projects = () => {
                                     src={project.img}
                                     alt="Project Photo"
                                     className="w-full rounded-tr-3xl rounded-bl-3xl h-48 object-cover 
-            opacity-90 group-hover:opacity-100 transition-opacity duration-500
+            opacity-90 group-hover:opacity-100  duration-500
             group-hover:scale-[1.05] transition-transform"
                                 />
 
