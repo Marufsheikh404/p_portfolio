@@ -10,7 +10,7 @@ const AboutPage = () => {
     return (
         <div>
             <div className=" min-h-screen flex items-center justify-center p-4 sm:p-8 font-sans">
-                <div className="max-w-7xl w-full mx-auto py-10 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl w-full mx-auto py-10 px-2 sm:px-6 lg:px-8">
                     <div className="text-center mb-4">
                         <span className="text-gray-500 tracking-widest text-md">|| ABOUT ME ||</span>
                     </div>

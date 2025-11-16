@@ -17,7 +17,7 @@ const Education = () => {
     ];
 
     return (
-        <section className="text-white py-8 px-4">
+        <section className="text-white py-8 px-2">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">

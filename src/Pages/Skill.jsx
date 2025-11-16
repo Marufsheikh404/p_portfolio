@@ -45,7 +45,7 @@ const Skill = () => {
 
     return (
         <section className=" text-white py-10">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-2">
                 <div className="text-center mb-16">
                     <p className="text-gray-400 tracking-widest uppercase text-sm">
                         || Skill I have ||
