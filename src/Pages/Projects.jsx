@@ -53,60 +53,72 @@ const Projects = () => {
                 >
                     {projects.map((project) => (
                         <SwiperSlide key={project.id}>
-                            <div className="relative rounded-2xl overflow-hidden w-[320px] h-[420px] mx-auto group bg-[#141414] p-2">
+                            <div className="relative rounded-2xl overflow-hidden w-[320px] h-[420px] mx-auto group 
+        bg-[#0e0e0e] p-2 
+        border border-red-500/20
+        shadow-[0_0_8px_rgba(255,0,0,0.15)]
+        transition-all duration-500
+        hover:shadow-[0_0_15px_rgba(255,0,0,0.35)] hover:border-red-500/40">
+
+                                {/* Image */}
                                 <img
                                     src={project.img}
                                     alt="Project Photo"
-                                    className="w-full rounded-tr-3xl rounded-bl-3xl h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                                    className="w-full rounded-tr-3xl rounded-bl-3xl h-48 object-cover 
+            opacity-90 group-hover:opacity-100 transition-opacity duration-500
+            group-hover:scale-[1.05] transition-transform"
                                 />
 
-                                {/* Red top glow line */}
-                                {/* <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-red-500 via-pink-500 to-red-500 animate-pulse"></div> */}
+                                {/* Neon Red Top Line */}
+                                <div className="absolute top-0 left-0 w-full h-[3px] 
+            bg-gradient-to-r from-red-500 via-rose-500 to-red-500 opacity-80 
+            group-hover:opacity-100 transition-all duration-500"></div>
 
                                 <div className="p-5 space-y-3">
-                                    <h2 className="text-xl font-semibold text-slate-400">
+
+                                    {/* Title */}
+                                    <h2 className="text-xl font-semibold text-slate-300 
+                group-hover:text-red-400 transition-all duration-300">
                                         {project.title}
                                     </h2>
 
+                                    {/* Tech Tags */}
                                     <div className="flex flex-wrap gap-2">
                                         {project.tech.map((t, i) => (
                                             <span
                                                 key={i}
-                                                className="text-xs px-2 rounded-full  backdrop-blur-md"
+                                                className="text-xs px-2 py-0.5 rounded-full 
+                        bg-gradient-to-r from-red-500/10 to-rose-500/10 
+                        border border-red-500/30 
+                        text-red-300/90 
+                        backdrop-blur-sm shadow-[0_0_8px_rgba(255,0,0,0.2)]
+                        transition-all duration-300"
                                             >
                                                 {t}
                                             </span>
                                         ))}
                                     </div>
 
+                                    {/* Button Section */}
                                     <div className="flex items-center justify-between mt-5 text-sm">
                                         <a
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="relative flex items-center gap-1 hover:text-pink-800 transition-colors duration-300 
-                                            after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] 
-                                          after:bg-pink-800 after:scale-x-0 after:origin-left after:transition-transform after:duration-300 
-                                            hover:after:scale-x-100"
+                                            className="relative flex items-center gap-1 
+                    text-red-300 hover:text-red-400 transition-colors duration-300
+                    after:content-[''] after:absolute after:left-0 after:-bottom-1 
+                    after:w-full after:h-[2px] 
+                    after:bg-red-400/70 after:scale-x-0 
+                    after:origin-left after:transition-transform after:duration-300 
+                    hover:after:scale-x-100"
                                         >
                                             <SquareArrowOutUpRight size={14} />
                                             <span>View Project</span>
                                         </a>
-
-                                        {/* <button
-                                            onClick={() => {
-                                                setSelectDes(project);
-                                                document.getElementById("my_modal_5").showModal();
-                                            }}
-                                            className="hover:text-red-400 hover:drop-shadow-[0_0_10px_rgba(255,0,0,0.6)] transition-all duration-300 cursor-pointer"
-                                        >
-                                            Details
-                                        </button> */}
                                     </div>
-                                </div>
 
-                                {/* Red Neon bottom edge */}
-                                {/* <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-pink-500 to-red-500 blur-sm"></div> */}
+                                </div>
                             </div>
                         </SwiperSlide>
                     ))}

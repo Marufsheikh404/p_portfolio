@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        sans:["Cinzel", "serif"]
+        sans:["Playfair Display", "serif"]
       },
       backgroundImage: {
         'hero-pattern': "url('/src/assets/Background.png')",
