@@ -15,8 +15,8 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
     const menuItems = [
         { icon: <FaHouse />, text: "Home", ref: refs.homeRef, id: "home" },
         { icon: <FaImage />, text: "About", ref: refs.aboutRef, id: "about" },
-        { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "Skill" },
         { icon: <BsFillProjectorFill />, text: "Projects", ref: refs.ProjectRef, id: "Project" },
+        { icon: <GiAchievement />, text: "Skills", ref: refs.SkillRef, id: "Skill" },
         { icon: <MdOutlineCastForEducation />, text: "Education", ref: refs.EducationRef, id: "Education" },
         { icon: <FaComment />, text: "Contact", ref: refs.contactRef, id: "contact" },
     ];

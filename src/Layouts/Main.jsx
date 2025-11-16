@@ -95,8 +95,8 @@ const Main = () => {
             <div className="flex-1 lg:ml-[150px] w-full overflow-x-hidden">
                 <section ref={homeRef} className="min-h-screen"><HomePage /></section>
                 <section ref={aboutRef} className="min-h-screen"><About /></section>
-                <section ref={SkillRef} className="min-h-screen"><Skill /></section>
                 <section ref={ProjectRef}><Projects /></section>
+                <section ref={SkillRef} className="min-h-screen"><Skill /></section>
                 <section ref={EducationRef}><Education /></section>
                 <section ref={contactRef}><Contact /></section>
                 <section ref={FooterRef}><FooterPage /></section>

@@ -33,7 +33,7 @@ const Projects = () => {
                     effect={"coverflow"}
                     grabCursor={true}
                     centeredSlides={true}
-                    slidesPerView={1}
+                    slidesPerView={2}
                     breakpoints={{
                         640: { slidesPerView: 1 },
                         768: { slidesPerView: 2 },
