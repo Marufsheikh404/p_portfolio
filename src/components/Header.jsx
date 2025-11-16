@@ -22,7 +22,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
     ];
 
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center">
 
             {/* MOBILE HAMBURGER BUTTON */}
             <div className="lg:hidden fixed top-4 left-4 z-50">
@@ -48,7 +48,7 @@ const Header = ({ refs, scrollTo, active, setActive }) => {
                     {/* Profile */}
                     <div className="flex flex-col -mt-3 items-center">
                         <img
-                            className="w-20 h-20 mb-3 rounded-full p-1 border border-gray-600 bg-[#2D121A] object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-20 h-20 mb-3 rounded-full border border-gray-600 object-cover hover:scale-105 transition-transform duration-300"
                             src={image}
                             alt="Profile"
                         />
