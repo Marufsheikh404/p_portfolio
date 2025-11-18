@@ -3,7 +3,7 @@ import ParticleBackground from "../components/ParticleBackground";
 import Typewriter from "typewriter-effect";
 import gsap from "gsap";
 import { FiArrowRight } from "react-icons/fi";
-import image from "../assets/Profile.png";
+import image from "../../src/assets/image (1).png";
 
 const HomePage = () => {
     const textRef = useRef();
@@ -86,7 +86,7 @@ const HomePage = () => {
                 {/* RIGHT SIDE */}
                 <div className="flex-1 flex justify-center items-center mt-10 lg:mt-0">
                     <img
-                        className="w-full max-w-sm lg:max-w-md object-contain"
+                        className="w-full max-w-sm lg:max-w-full object-cover translate-y-6"
                         src={image}
                         alt="Photo"
                     />
