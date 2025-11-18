@@ -6,6 +6,15 @@ import { FiArrowRight } from "react-icons/fi";
 import image from "../../src/assets/image (1).png";
 
 const HomePage = () => {
+
+    // CV download function
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "/Maruf_Resume.pdf";
+        link.download = "Maruf_Resume.pdf";
+        link.click();
+    };
+
     const textRef = useRef();
 
     useEffect(() => {
@@ -74,10 +83,11 @@ const HomePage = () => {
 
                     <div className="mt-6 flex justify-center lg:justify-start">
                         <button
+                            onClick={handleDownload}
                             type="submit"
                             className="flex items-center gap-3 bg-gradient-to-r from-[#ff004c] to-[#ff006e] text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 group"
                         >
-                            View Portfolio
+                            Download Resume
                             <FiArrowRight className="text-white text-lg transition-transform duration-300 group-hover:translate-x-2" />
                         </button>
                     </div>
