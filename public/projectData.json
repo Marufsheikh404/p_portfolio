@@ -49,5 +49,20 @@
         "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
         "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
         "live": "https://ecommerce-site-peach-seven.vercel.app/"
+    },
+    {
+        "id": 4,
+        "title": "E-Learing Platfrom",
+        "img": "https://i.ibb.co.com/MxWx138h/E-Learning-landing-page-education-homepage-learn.jpg",
+        "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "Javascript",
+            "NextAuth.js",
+            "Other Packges"
+        ],
+        "description": "Donation is an interactive web app that allows users to donate to various causes and categories, showing real-time updates and total contributions dynamically.",
+        "challengingPart": "The most challenging part was building a real-time donation counter and filter system using JavaScript to update data dynamically without reloading the page.",
+        "live": "https://edcare-snowy.vercel.app/"
     }
 ]
