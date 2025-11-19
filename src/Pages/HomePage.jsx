@@ -44,7 +44,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <section className="min-h-screen relative bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center justify-center text-white">
+        <section className="min-h-screen relative bg-hero-pattern bg-cover bg-center bg-no-repeat flex items-center justify-center text-white -mt-11">
             <ParticleBackground />
 
             <div className="container max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between p-8 z-10">

@@ -30,7 +30,7 @@ const ParticleBackground = () => {
                     },
                     particles: {
                         color: { value: "#ff0000" },
-                        links: { color: "#ffffff", distance: 40, enable: true, opacity: 0.2, width: 1 },
+                        links: { color: "#ffffff", distance: 30, enable: true, opacity: 0.2, width: 0.5 },
                         move: { direction: "none", enable: true, outModes: { default: "out" }, speed: 0.5 },
                         number: { density: { enable: true, area: 800 }, value: 80 },
                         opacity: { value: 0.5 },
